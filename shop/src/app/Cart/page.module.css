@@ -1,0 +1,17 @@
+.cart_button {
+   display: inline-flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   gap: 1.5px;
+   background-color: rgb(115, 105, 193);
+   border: none;
+   border-radius: 30px;
+   font-size: 20px;
+   color: azure;
+   width: 10%;
+   height: 50%;
+}
+
+.cart_button__separator {
+}
