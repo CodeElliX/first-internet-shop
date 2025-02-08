@@ -1,0 +1,11 @@
+.footer_wrap {
+    background-color: rgb(122, 15, 83);
+    border: 1px solid;
+    width: 92.7%;
+    height: 30%;
+    margin: 0 auto;
+}
+
+.footer_wrap div {
+ box-sizing: border-box;
+}

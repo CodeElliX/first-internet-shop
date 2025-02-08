@@ -2,6 +2,7 @@
 import Search  from "../../src/app/search/page";
 import styles from "./header.module.css";
 import Link from "next/link";
+
  const Header = () => {
     return <div className={styles.header}>
    <Link href="/" className={styles.logo}> <span>bags shop</span></Link>

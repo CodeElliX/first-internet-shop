@@ -1,0 +1,28 @@
+.categories {
+    background-color: blue;
+    width: 92.7%;
+    height: 10vh;
+    margin: 0 auto;
+}
+
+.category__sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+    border-right: 1px solid;
+
+}
+
+.category__sections li{
+    border-right: 1px solid;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+
+.category__sections:last-child {
+    margin-right: 40px;
+    border-right: none;
+}
