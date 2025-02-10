@@ -1,24 +1,40 @@
 .categories {
-    background-color: blue;
-    width: 92.7%;
-    height: 10vh;
-    margin: 0 auto;
+    background-color: #424F59;
+    width: 90%;
+    min-height: min-content;
+    padding: 0 20px;
+    font-size: 70%;
+
 }
 
 .category__sections {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
     list-style: none;
-    padding: 10px 0;
     border-right: 1px solid;
+    align-self: center;
+    color: aliceblue;
 
 }
 
-.category__sections li{
-    border-right: 1px solid;
-    line-height: 1.5;
-    padding: 10px;
+.category__sections li:not(:last-child){
+    border-right: 1px solid white;
+    padding-right: 50px;
+}
+
+.category__sections li span{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.categories__icon {
+    display: block;
+    fill: aliceblue;
+    width: 40px;
+    height: 40px;
 }
 
 

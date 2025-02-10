@@ -6,7 +6,7 @@ import Products from "./products/page";
 
 export default function Home() {
   return (
-    <div>
+    <div className="main__page">
         <Categories />
         <Products />
         <Footer />

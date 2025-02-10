@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -11,11 +12,17 @@ html, body {
     font-size: 30px;
     display: flex;
     flex-direction: column;
- width: 100%;
- min-height: 100vh;
- background-color: bisque;
- margin-top: 40px;
+    align-items: center;
+    width: 100%;
+    background-color: bisque;
+    /* margin-top: 40px; */
+    min-height: max-content;
 }
 
-
-
+.main__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
