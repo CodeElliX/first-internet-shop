@@ -9,7 +9,6 @@ import bag6 from '../../../public/bag6.webp';
 import Slider from '../slider/page'
 
 const ProductItem = () => {
-
     //передать массив с картинками
     const productImg = [bagIcon, bag2, bag3, bag4, bag5, bag6, bagIcon, bag2];
     return (
@@ -45,7 +44,7 @@ const ProductItem = () => {
                             <span className={styles.value}>Сумки-шопери</span>
                         </div>
                         <div className={styles.list_item}>
-                            <span className={styles.key}>Ліцензія/серія</span>
+                            <span className={styles.key}>Бренд</span>
                             <span className={styles.value}>KITE</span>
                         </div>
                     </div>

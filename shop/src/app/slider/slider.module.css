@@ -16,10 +16,13 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     width: 300px;
     height: 300px;
     align-self: center;
+
 }
+
+
 .slider__next {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border: 1px solid;
     position: relative;
     overflow: hidden;
@@ -27,24 +30,23 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 .slider__next_img {
     width: 100px;
     height: 100px;
-    z-index: 1;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .activeSlide {
-    opacity: 1;
+    outline: 3px solid green;
     transform: translateX(0);
-    z-index: 2;
-    transition: opacity 0.5s, transform 0.5s;
+    transition: transform 0.5s;
 }
 .lastSlide {
     transform: translateX(-100%);
-    transition: opacity 0.5s, transform 0.5s;
-    z-index: 1;
+    transition: transform 0.5s;
+    position: absolute;
+    left: 0;
 }
 .nextSlide {
     transform: translateX(100%);
-    transition: opacity 0.5s, transform 0.5s;
-    z-index: 1;
+    transition: transform 0.5s;
+    /* outline: 3px solid rgb(44, 31, 184); */
 }
 
 .arrow_left {

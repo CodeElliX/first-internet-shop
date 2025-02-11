@@ -1,3 +1,4 @@
+"use client"
 const { useState } = require("react")
 import styles from './bags.module.css';
 import Image from 'next/image';

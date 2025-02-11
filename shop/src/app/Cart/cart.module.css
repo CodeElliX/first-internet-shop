@@ -1,0 +1,12 @@
+.cart {
+    border: 1px solid;
+    width: 90%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart__content_items {
+    min-width: 80%;
+}

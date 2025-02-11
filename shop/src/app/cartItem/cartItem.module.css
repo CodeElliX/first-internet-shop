@@ -1,0 +1,107 @@
+.cart_item {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart_item__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 1px solid black;
+    
+}
+.cart_item__info {
+    border: 1px solid;
+
+    text-align: center;
+}
+.cart_item__price {
+    font-size: 22px;
+    border: 1px solid;
+
+}
+.cart_item__info h3 {
+ font-size: 22px;
+ margin-bottom: 0;
+}
+.cart_item__info p {
+ font-size: 18px;
+ opacity: 0.5;
+ margin-top: 0;
+}
+.cart_item__count {
+    border: 1px solid;
+display: flex;
+width: 11%;
+justify-content: space-between;
+align-items: center;
+}
+.cart_item__count_minus,
+.cart_item__count_plus{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    /* background-color: aqua; */
+    padding: 0;
+    /* transition: all 700ms ease-in-out; */
+
+}
+.cart_item__count_minus svg,
+.cart_item__count_plus svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.cart_item__count_minus line,
+.cart_item__count_plus line {
+    /* цвет крестика */
+stroke: #424F59;
+transition: stroke 300ms ease-in-out;
+}
+
+.cart_item__count_minus circle,
+.cart_item__count_plus circle{
+    /* цвет круга */
+    stroke: #424F59;
+    transition: fill 300ms ease-in-out;
+}
+.cart_item__count_minus:hover line,
+.cart_item__count_plus:hover line {
+    /* цвет крестика */
+    stroke: #FFFFFF;
+}
+
+.cart_item__count_minus:hover circle,
+.cart_item__count_plus:hover circle {
+     cursor: pointer;
+    /* заливка круга */
+    fill: #4b5b67;  
+}
+.cart_item__count b {
+    font-size: 22px;
+}
+.cart_item__count_minus:disabled {
+opacity: 0.4;
+transform: none;
+}
+.cart_item__count_minus:active circle,
+.cart_item__count_plus:active circle{
+    fill: #3c474f; 
+    transform: translateY(2px);
+}
+.cart_item__remove_item {
+    transform: rotate(45deg);
+}
+.cart_item__remove_item:hover circle {
+  fill: #4b5b67;
+}
+.cart_item__remove_item:hover line {
+    stroke: #FFFFFF;
+}
+.cart_item__remove_item:active circle {
+    fill: #3c474f; 
+    transform: translateY(2px);
+}
