@@ -6,12 +6,12 @@
     min-height: 800px;
     padding: 40px 20px;
     text-decoration: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .productItem_section1,
 .productItem_section2 {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
 .list_item {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
     padding: 10px 0;
 
 }

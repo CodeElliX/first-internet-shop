@@ -9,7 +9,6 @@ export default function Home() {
     <div className="main__page">
         <Categories />
         <Products />
-        <Footer />
     </div>
   );
 }

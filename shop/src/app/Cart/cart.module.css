@@ -1,5 +1,4 @@
 .cart {
-    border: 1px solid;
     width: 90%;
     padding: 20px;
     background-color: #FFFFFF;
@@ -7,6 +6,104 @@
     flex-direction: column;
     align-items: center;
 }
+.cart__top {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(12, 13, 12, 0.1);
+    margin-bottom: 20px;
+}
+.content__tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 32px;
+}
+
+.cart__clear {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px; 
+    opacity: 0.3;
+    transition: all 200ms ease-in-out;
+}
+
+.cart__clear:hover {
+ opacity: 0.8;
+ cursor: pointer;
+}
+
 .cart__content_items {
     min-width: 80%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(12, 13, 12, 0.1);
+}
+
+.cart__bottom {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.cart__bottom_details {
+display: flex;
+justify-content: space-between;
+/* background-color: rgba(127, 255, 212, 0.5); */
+}
+
+.cart__bottom_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 20px;
+    /* background-color: rgba(127, 255, 212, 0.5); */
+    width: 70%;
+}
+
+.button_go_back,
+.button_pay_btn {
+font-size: 22px;
+padding: 10px;
+border-radius: 10px;
+}
+
+.button_go_back {
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ opacity: 0.5;
+ transition: all 200ms ease-in-out;
+}
+
+.cart__bottom_link {
+    text-decoration: none;
+}
+
+.button_pay_btn {
+ background-color: rgba(12, 81, 58, 0.5);
+ color: #FFFFFF;
+ transition: all 200ms ease-in-out;
+} 
+
+.button_pay_btn:hover,
+.button_go_back:hover {
+    background-color: rgba(12, 81, 58, 0.7);
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.button_pay_btn:active,
+.button_go_back:active {
+    transform: translateY(1px);
+}
+
+
+.button_go_back:hover svg path {
+  stroke: #FFFFFF;
 }

@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: bisque;
+    background-color: rgb(214, 213, 211);
     /* margin-top: 40px; */
     min-height: max-content;
 }

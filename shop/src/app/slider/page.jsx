@@ -6,23 +6,16 @@ import { useEffect } from 'react';
 
 
 const Slider = (props) => {
-    const [productImage, setProductImage] = useState([]);
+    
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        if (props.productImg?.length > 0) {
-            setProductImage(props.productImg);
-        } else {
-            setProductImage([]);
-        }
-    }, [props.productImg]);
 
     const onClickArrowNext = () => {        
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % productImage.length);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
     };
     
     const onClickArrowPrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + productImage.length) % productImage.length);
+        setCurrentIndex((prevIndex) => prevIndex - 1);
         };
 
 return (
@@ -45,12 +38,12 @@ return (
 
     <section className={styles.slider__next}>
     
-            {productImage && productImage.map((img, index) => {
+            {/* {props.productImg && props.productImg.map((img, index) => {
                 let position = styles.nextSlide;
                 if(index === currentIndex) {
                     position = styles.activeSlide;
                 }
-                if(index === currentIndex -1 || (currentIndex === 0 && index === productImage.length -1)) {
+                if(index === currentIndex -1 || (currentIndex === 0 && index === props.productImg.length -1)) {
                     position = styles.lastSlide;
                 }
             //    else {
@@ -58,6 +51,19 @@ return (
             //    }
                 return (
                 <div key={index} className={position}>
+                    <Image src={img} alt="icon" className={styles.slider__next_img} />
+                </div>
+                )
+            })} */}
+            {props.productImg.map((img, index) => {
+                let position;
+                if(index === currentIndex) {
+                    position = styles.activeSlide;
+                }else {
+                    position = styles.nextSlide;
+                }
+                return (
+                    <div key={index} className={position}>
                     <Image src={img} alt="icon" className={styles.slider__next_img} />
                 </div>
                 )

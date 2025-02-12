@@ -3,10 +3,17 @@ import styles from "./footer.module.css";
 const Footer = () => {
     return (
         <div className={styles.footer_wrap}>
-            Footer
-            <div>fghjklkjhgfdfghjk</div>
-            <div>fghjklkjhgfdfghjk</div>
-            <div>fghjklkjhgfdfghjk</div>
+            <section className={styles.information}>
+                <h4>Інформація</h4>
+                Знижки
+                Контакти
+                Гарантія
+                Оплата і доставка
+                Повернення
+                Корпоративні та оптові замовлення
+                Програма лояльності
+                Договір публічної оферти
+            </section>
         </div>
     )
 }

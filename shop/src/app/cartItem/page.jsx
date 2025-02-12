@@ -14,7 +14,7 @@ const CartItem = () => {
         setCount(count += 1)
     }
     const onClickRemove = () => {
-        setCount(count += 1)
+        setCount(count = 1)
     }
     return (
         <>
