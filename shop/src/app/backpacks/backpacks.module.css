@@ -1,4 +1,4 @@
-.products {
+.backpacks_wrap {
     display: flex;
     background-color: #FFFFFF;
     width: 90%;
@@ -6,11 +6,11 @@
     min-height: 800px;
     padding: 40px 20px;
 }
-.styles.products__filters_section {
+.backpacks__filters_section {
     min-width: 200px;
 }
 
-.products__bags_section {
+.backpacks__bags_section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

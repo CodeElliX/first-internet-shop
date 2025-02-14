@@ -1,13 +1,13 @@
 "use client"
 const { useState } = require("react")
-import styles from './bags.module.css';
+import styles from './productCard.module.css';
 import Image from 'next/image';
 import bagIcon from '../../../public/bag_img.webp';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link'
 
 
-const Bags = () => {
+const ProductCard = () => {
     const [clikedSvg, setClickSvg] = useState(false);
     const router = useRouter();
     const onClickEmptySvg = () => {
@@ -25,7 +25,7 @@ const Bags = () => {
                 <Image src={bagIcon} alt="icon" className={styles.product}/>
                 <h4>Рюкзак жіночий</h4>
                 </Link>
-                <span>Ціна: 600грн</span>
+                <span><b>Ціна:</b> 600грн</span>
                 {!clikedSvg ?
                  <svg onClick={onClickEmptySvg} data-name="Layer 1" id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                  <title/>
@@ -39,4 +39,4 @@ const Bags = () => {
     )
 }
 
-export default Bags;
+export default ProductCard;

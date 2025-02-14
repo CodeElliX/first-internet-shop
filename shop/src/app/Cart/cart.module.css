@@ -81,10 +81,6 @@ border-radius: 10px;
  transition: all 200ms ease-in-out;
 }
 
-.cart__bottom_link {
-    text-decoration: none;
-}
-
 .button_pay_btn {
  background-color: rgba(12, 81, 58, 0.5);
  color: #FFFFFF;

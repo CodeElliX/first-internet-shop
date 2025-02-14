@@ -59,7 +59,7 @@ const Cart = () => {
             <span> Сума замовлення: <b>700грн</b> </span>
           </div>
           <div className={styles.cart__bottom_buttons}>
-            <Link href="/" className={styles.cart__bottom_link}>
+            <Link href="/">
               <button className={styles.button_go_back}>
                 <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 13L1 6.93015L6.86175 1" stroke="#00000080" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

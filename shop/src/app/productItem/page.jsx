@@ -43,10 +43,6 @@ const ProductItem = () => {
                             <span className={styles.key}>Група товарів</span>
                             <span className={styles.value}>Сумки-шопери</span>
                         </div>
-                        <div className={styles.list_item}>
-                            <span className={styles.key}>Бренд</span>
-                            <span className={styles.value}>KITE</span>
-                        </div>
                     </div>
             </section>
         </div>

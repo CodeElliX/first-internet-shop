@@ -1,0 +1,30 @@
+.products_groop {
+    display: flex;
+    flex-direction: column;
+}
+
+.products_groop h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.products_groop span {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.products_groop__colours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.products_groop__colours div {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}

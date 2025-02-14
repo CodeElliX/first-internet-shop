@@ -1,5 +1,7 @@
 .categories {
-    background-color: #424F59;
+    /* background-color: #424F59; */
+    /* background-color: rgba(31, 103, 79, 0.5); */
+    background-color: #5CC1C1;
     width: 90%;
     min-height: min-content;
     padding: 0 20px;

@@ -1,10 +1,10 @@
 import styles from './filters.module.css';
-
+import FiltersItems from '../filtersItems/page';
 const Filters = () => {
     return (
-        <div className={styles.filter__wrap}>
-
-        </div>
+        <aside className={styles.filter__wrap}>
+     <FiltersItems/>
+        </aside>
     )
 }
 

@@ -15,7 +15,6 @@ body {
     align-items: center;
     width: 100%;
     background-color: rgb(214, 213, 211);
-    /* margin-top: 40px; */
     min-height: max-content;
 }
 
@@ -26,3 +25,9 @@ body {
     align-items: center;
     width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
