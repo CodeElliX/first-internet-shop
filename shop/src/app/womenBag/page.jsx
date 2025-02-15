@@ -1,0 +1,8 @@
+
+const WomenBag = () => {
+    return (
+        <>
+        woomensBag
+        </>
+    )
+}

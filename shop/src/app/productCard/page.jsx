@@ -20,6 +20,7 @@ const ProductCard = () => {
 
     return (
         <div className={styles.bags__card}>
+
             <div className={styles.card}>
             <Link href="/productItem" className={styles.link}>
                 <Image src={bagIcon} alt="icon" className={styles.product}/>

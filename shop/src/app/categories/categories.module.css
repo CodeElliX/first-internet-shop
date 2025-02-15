@@ -1,12 +1,9 @@
 .categories {
-    /* background-color: #424F59; */
-    /* background-color: rgba(31, 103, 79, 0.5); */
-    background-color: #5CC1C1;
+    background: linear-gradient( #5CC1C1, #096c5d);
     width: 90%;
     min-height: min-content;
     padding: 0 20px;
     font-size: 70%;
-
 }
 
 .category__sections {
@@ -24,6 +21,10 @@
 .category__sections li:not(:last-child){
     border-right: 1px solid white;
     padding-right: 50px;
+}
+
+.category__sections li:hover{
+   background-color: aqua;
 }
 
 .category__sections li span{
