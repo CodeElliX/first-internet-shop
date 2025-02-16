@@ -6,23 +6,23 @@ import ProductCard from '../productCard/page';
 const AllProducts = () => {
     return (
         <div className={styles.products}>
-        <div className={styles.products__filters_section}>
-            <Filters />
-        </div>
-          <div className={styles.products__bags_section}>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+            <div className={styles.products__filters_section}>
+                <Filters />
+            </div>
+            <div className={styles.products__bags_section}>
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
             </div>
         </div>
     )

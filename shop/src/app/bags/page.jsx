@@ -1,15 +1,15 @@
-import styles from './backpacks.module.css';
-import Filters from '../filters/page';
-import ProductCard from '../productCard/page';
+import Filters from "../filters/page";
+import styles from './bags.module.css'
+import ProductCard from "../productCard/page";
 
-const Backpacks = () => {
+const Bags = () => {
     return (
         <>
-            <div className={styles.backpacks_wrap}>
-                <div className={styles.backpacks__filters_section}>
+            <div className={styles.bags__wrap}>
+                <div className={styles.bags__filters_section}>
                     <Filters />
                 </div>
-                <div className={styles.backpacks__bags_section}>
+                <div className={styles.bags__section}>
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
@@ -27,4 +27,4 @@ const Backpacks = () => {
     )
 }
 
-export default Backpacks;
+export default Bags;

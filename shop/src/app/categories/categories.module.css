@@ -1,5 +1,5 @@
 .categories {
-    background: linear-gradient( #5CC1C1, #096c5d);
+    background: linear-gradient(#5CC1C1, #096c5d);
     width: 90%;
     min-height: min-content;
     padding: 0 20px;
@@ -18,21 +18,22 @@
 
 }
 
-.category__sections li:not(:last-child){
+.category__sections li:not(:last-child) {
     border-right: 1px solid white;
     padding-right: 50px;
 }
 
-.category__sections li:hover{
-   background-color: aqua;
+.category__sections li:hover {
+    background-color: aqua;
 }
 
-.category__sections li span{
+.category__sections li span {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
+
 .categories__icon {
     display: block;
     fill: aliceblue;

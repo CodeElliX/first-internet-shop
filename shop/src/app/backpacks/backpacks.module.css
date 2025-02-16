@@ -6,6 +6,7 @@
     min-height: 800px;
     padding: 40px 20px;
 }
+
 .backpacks__filters_section {
     min-width: 200px;
 }
@@ -16,4 +17,5 @@
     justify-content: center;
     gap: 20px;
     margin-left: 30px;
+    height: 80%;
 }

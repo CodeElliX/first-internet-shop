@@ -3,7 +3,7 @@ import FiltersItems from '../filtersItems/page';
 const Filters = () => {
     return (
         <aside className={styles.filter__wrap}>
-     <FiltersItems/>
+            <FiltersItems />
         </aside>
     )
 }

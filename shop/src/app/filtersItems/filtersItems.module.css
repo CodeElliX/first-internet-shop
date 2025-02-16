@@ -29,30 +29,27 @@
     background-color: transparent;
 }
 
-.products_groop__gender{
+.products_groop__gender {
     display: flex;
     justify-content: center;
     height: 50px;
-    background-color: blue;
 }
 
 .products_groop__gender svg {
     transition: transform 200ms ease-in-out;
     width: 50px;
-
-    background-color: black;
-    /* margin-right: 30px; */
 }
+
 .products_groop__gender svg:active circle {
     fill: #BFFFE9;
 }
 
 .products_groop__gender svg:hover {
-  transform: translateY(1px);
-  cursor: pointer;
+    transform: translateY(1px);
+    cursor: pointer;
 }
 
 .products_groop__gender svg:active {
-  border: 1px solid;
-  transform: none;
+    border: 1px solid;
+    transform: none;
 }

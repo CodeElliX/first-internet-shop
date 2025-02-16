@@ -1,4 +1,4 @@
-.products {
+.wallets__wrap {
     display: flex;
     background-color: #FFFFFF;
     width: 90%;
@@ -7,11 +7,11 @@
     padding: 40px 20px;
 }
 
-.products__filters_section {
+.wallets__filters_section {
     min-width: 200px;
 }
 
-.products__bags_section {
+.wallets__section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

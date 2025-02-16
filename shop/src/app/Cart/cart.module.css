@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .cart__top {
     width: 80%;
     height: 50px;
@@ -15,6 +16,7 @@
     border-bottom: 1px solid rgba(12, 13, 12, 0.1);
     margin-bottom: 20px;
 }
+
 .content__tittle {
     display: flex;
     justify-content: space-between;
@@ -27,14 +29,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 20px; 
+    font-size: 20px;
     opacity: 0.3;
     transition: all 200ms ease-in-out;
 }
 
 .cart__clear:hover {
- opacity: 0.8;
- cursor: pointer;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .cart__content_items {
@@ -52,9 +54,8 @@
 }
 
 .cart__bottom_details {
-display: flex;
-justify-content: space-between;
-/* background-color: rgba(127, 255, 212, 0.5); */
+    display: flex;
+    justify-content: space-between;
 }
 
 .cart__bottom_buttons {
@@ -62,30 +63,29 @@ justify-content: space-between;
     justify-content: space-between;
     align-self: center;
     margin-top: 20px;
-    /* background-color: rgba(127, 255, 212, 0.5); */
     width: 70%;
 }
 
 .button_go_back,
 .button_pay_btn {
-font-size: 22px;
-padding: 10px;
-border-radius: 10px;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .button_go_back {
- display: flex;
- align-items: center;
- gap: 20px;
- opacity: 0.5;
- transition: all 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    opacity: 0.5;
+    transition: all 200ms ease-in-out;
 }
 
 .button_pay_btn {
- background-color: rgba(12, 81, 58, 0.5);
- color: #FFFFFF;
- transition: all 200ms ease-in-out;
-} 
+    background-color: rgba(12, 81, 58, 0.5);
+    color: #FFFFFF;
+    transition: all 200ms ease-in-out;
+}
 
 .button_pay_btn:hover,
 .button_go_back:hover {
@@ -101,5 +101,5 @@ border-radius: 10px;
 
 
 .button_go_back:hover svg path {
-  stroke: #FFFFFF;
+    stroke: #FFFFFF;
 }

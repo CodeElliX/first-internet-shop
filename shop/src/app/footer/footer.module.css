@@ -1,4 +1,3 @@
-
 .footer_wrap {
     width: 90%;
     height: 30%;
@@ -41,7 +40,7 @@
 }
 
 .footer__item {
-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .footer__item:hover {
@@ -51,18 +50,18 @@ transition: all 150ms ease-in-out;
 }
 
 .footer__item:active {
- transform: translateY(1px);
+    transform: translateY(1px);
 }
 
-.footer__information h4{
-   margin-bottom: 2px;
-   font-size: 16px;
-   font-weight: bolder;
-   text-transform: uppercase;
-   text-align: center;
-   opacity: 1;
+.footer__information h4 {
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 1;
 }
 
 .footer_wrap div {
- box-sizing: border-box;
+    box-sizing: border-box;
 }

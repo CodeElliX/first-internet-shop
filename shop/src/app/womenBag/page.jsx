@@ -1,8 +1,0 @@
-
-const WomenBag = () => {
-    return (
-        <>
-        woomensBag
-        </>
-    )
-}
