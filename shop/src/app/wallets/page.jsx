@@ -1,8 +1,10 @@
+"use client"
 import styles from './wallets.module.css';
 import Filters from '../filters/page';
-import ProductCard from '../productCard/page';
+// import ProductCard from '../product-card/page';
 
 const Wallets = () => {
+
     return (
         <>
             <div className={styles.wallets__wrap}>
@@ -10,17 +12,17 @@ const Wallets = () => {
                     <Filters />
                 </div>
                 <div className={styles.wallets__section}>
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
+                    {/* <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard /> */}
                 </div>
             </div>
         </>

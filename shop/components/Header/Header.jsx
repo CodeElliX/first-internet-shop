@@ -12,7 +12,7 @@ const Header = () => {
   return <div className={styles.header}>
 
     <Link href="/">
-      <Image src={logo} alt="mouse" className={styles.logo} />
+      <Image src={logo} alt="logo" className={styles.logo} priority />
     </Link>
     {pathname !== '/cart' && (
       <div className={styles.header__right_side}>

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "name": "Функціональний рюкзак в стилі millitary",
+    "art": "008",
+    "category": "adults",
+    "gender": "male",
+    "classification": "0",
+    "color": "#78866B",
+    "structure": "anatomical",
+    "compartments": "1",
+    "price": "1580",
+    "image": [
+      "https://i.postimg.cc/G3sCcfQZ/K24-2596-L-2-1-800x800.webp",
+      "https://i.postimg.cc/fbgGs70z/K24-2596-L-2-2-800x800.webp",
+      "https://i.postimg.cc/htQxMcb2/K24-2596-L-2-4-800x800.webp",
+      "https://i.postimg.cc/k4stD4qg/K24-2596-L-2-5-800x800.webp",
+      "https://i.postimg.cc/6qQ4ZXpL/K24-2596-L-2-6-800x800.webp",
+      "https://i.postimg.cc/gjBXqTw9/K24-2596-L-2-7-800x800.webp",
+      "https://i.postimg.cc/XY5Gdx4h/K24-2596-L-2-21-800x800.webp",
+      "https://i.postimg.cc/0NdzHQ60/K24-2596-L-2-29-800x800.webp"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Блакитно-рожевий рюкзак",
+    "art": "028",
+    "category": "adults",
+    "gender": "female",
+    "classification": "0",
+    "color": "#00BFFF",
+    "structure": "AGS",
+    "compartments": "2",
+    "price": "1700",
+    "image": [
+      "https://i.postimg.cc/xCVkxSx2/TK24-727-M-1-800x800.webp",
+      "https://i.postimg.cc/j2sDT4Y3/TK24-727-M-4-800x800.webp",
+      "https://i.postimg.cc/jd6rPYNf/TK24-727-M-7-800x800.webp",
+      "https://i.postimg.cc/kXqHr66V/TK24-727-M-9-800x800.webp",
+      "https://i.postimg.cc/rwpYmB9M/TK24-727-M-12-800x800.webp",
+      "https://i.postimg.cc/dts5Hbpr/TK24-727-M-15-800x800.webp",
+      "https://i.postimg.cc/YqdbJXBV/TK24-727-M-17-800x800.webp",
+      "https://i.postimg.cc/FH1Dmj9K/TK24-727-M-21-800x800.webp"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 import Filters from "../filters/page";
 import styles from './bags.module.css'
-import ProductCard from "../productCard/page";
+// import ProductCard from "../product-card/page";
 
 const Bags = () => {
     return (
@@ -10,6 +10,7 @@ const Bags = () => {
                     <Filters />
                 </div>
                 <div className={styles.bags__section}>
+                    {/* <ProductCard />
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
@@ -19,8 +20,7 @@ const Bags = () => {
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
+                    <ProductCard /> */}
                 </div>
             </div>
         </>

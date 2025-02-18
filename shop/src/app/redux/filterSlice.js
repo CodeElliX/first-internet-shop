@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-  searchValue: ''
+  searchValue: '',
 }
 
 export const filterSlice = createSlice({
@@ -10,7 +10,7 @@ export const filterSlice = createSlice({
   reducers: {
     setSearchValue(state, actions) {
       state.searchValue = actions.payload
-    }
+    },
   }
 })
 

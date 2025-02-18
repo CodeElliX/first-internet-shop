@@ -40,10 +40,10 @@
   fill: green;
 }
 
-.bags__card img {
+/* .bags__card img {
   width: 133px;
   height: 112px;
-}
+} */
 
 .product {
   border-bottom: 3px solid rgba(127, 255, 212, 0.5);

@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import styles from './slider.module.css';
 import Image from 'next/image';
-import { useEffect } from 'react';
 
 
 const Slider = (props) => {
@@ -27,7 +26,7 @@ const Slider = (props) => {
                     <path d="M74.12,35.88a3,3,0,0,0-4.24,0l-26,26a3,3,0,0,0,0,4.24l26,26a3,3,0,0,0,4.24-4.24L50.24,64,74.12,40.12A3,3,0,0,0,74.12,35.88Z" />
                 </svg>
                 {props.productImg?.length > 0 && (
-                    <Image src={props.productImg[currentIndex]} alt="icon" className={styles.slider__main_img} />
+                    <Image src={props.productImg[currentIndex]} alt="icon" width={100} height={100} className={styles.slider__main_img} />
                 )}
                 <svg onClick={onClickArrowNext} className={styles.arrow_right} data-name="Livello 1" id="Livello_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                     <title />
@@ -64,7 +63,7 @@ const Slider = (props) => {
                     }
                     return (
                         <div key={index} className={position}>
-                            <Image src={img} alt="icon" className={styles.slider__next_img} />
+                            <Image width={100} height={100} src={img} alt="icon" className={styles.slider__next_img} />
                         </div>
                     )
                 })}

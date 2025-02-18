@@ -1,15 +1,16 @@
 "use client"
-const { useState } = require("react")
+import { useState } from 'react';
 import styles from './productCard.module.css';
 import Image from 'next/image';
-import bagIcon from '../../../public/bag_img.webp';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/compat/router';
 import Link from 'next/link'
 
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+
     const [clikedSvg, setClickSvg] = useState(false);
     const router = useRouter();
+
     const onClickEmptySvg = () => {
         setClickSvg(!clikedSvg);
     }
@@ -17,16 +18,22 @@ const ProductCard = () => {
     const onClickFullSvg = () => {
         router.push('/cart');
     }
-
     return (
         <div className={styles.bags__card}>
 
             <div className={styles.card}>
-                <Link href="/productItem" className={styles.link}>
-                    <Image src={bagIcon} alt="icon" className={styles.product} />
-                    <h4>Рюкзак жіночий</h4>
+                <Link href={`/product-item?id=${props.id}&from=${props.from}`} className={styles.link}>
+                    <Image
+                        src={Array.isArray(props.image) && props.image.length > 0 ? String(props.image[0]) : "/fallback-image.webp"}
+                        alt="icon"
+                        className={styles.product}
+                        width={133}
+                        height={112}
+                        priority
+                    />
+                    <h4>{props.name} {props.art}</h4>
                 </Link>
-                <span><b>Ціна:</b> 600грн</span>
+                <span><b>Ціна: </b>{props.price}грн</span>
                 {!clikedSvg ?
                     <svg onClick={onClickEmptySvg} data-name="Layer 1" id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title />

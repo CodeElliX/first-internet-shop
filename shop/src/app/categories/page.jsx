@@ -5,8 +5,8 @@ const Categories = () => {
     return (
         <div className={styles.categories}>
             <ul className={styles.category__sections}>
-                <li>
-                    <Link href="/allProducts">
+                <li className={styles.categry__item}>
+                    <Link href="/allProducts" className={styles.category__link}>
                         <span>
                             Усі товари
                             <svg height="48" viewBox="4 4 40 40" width="48"
@@ -17,24 +17,24 @@ const Categories = () => {
                         </span>
                     </Link>
                 </li>
-                <li>
-                    <Link href="/backpacks">
+                <li className={styles.categry__item}>
+                    <Link href="/backpacks" className={styles.category__link}>
                         <span>
                             Рюкзаки
                             <svg className={styles.categories__icon} viewBox="2 2 20 20" xmlns="http://www.w3.org/2000/svg"><title /><g data-name="Layer 2" id="Layer_2"><path d="M20,13a8,8,0,0,0-4-6.92V6A4,4,0,0,0,8,6v.08A8,8,0,0,0,4,13v1H20ZM12,5a8,8,0,0,0-1.84.22,2,2,0,0,1,3.68,0A8,8,0,0,0,12,5Z" /><polygon points="4 16 4 22 20 22 20 16 15 16 15 18 13 18 13 16 4 16" /></g></svg>
                         </span>
                     </Link>
                 </li>
-                <li>
-                    <Link href="/bags">
+                <li className={styles.categry__item}>
+                    <Link href="/bags" className={styles.category__link}>
                         <span>
                             Сумки
                             <svg className={styles.categories__icon} fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" /></svg>
                         </span>
                     </Link>
                 </li>
-                <li>
-                    <Link href="/wallets">
+                <li className={styles.categry__item}>
+                    <Link href="/wallets" className={styles.category__link}>
                         <span>
                             Гаманці
                             <svg className={styles.categories__icon} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
