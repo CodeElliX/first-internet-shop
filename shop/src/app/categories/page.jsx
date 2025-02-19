@@ -5,7 +5,7 @@ const Categories = () => {
     return (
         <div className={styles.categories}>
             <ul className={styles.category__sections}>
-                <li className={styles.categry__item}>
+                <li>
                     <Link href="/allProducts" className={styles.category__link}>
                         <span>
                             Усі товари
@@ -17,7 +17,7 @@ const Categories = () => {
                         </span>
                     </Link>
                 </li>
-                <li className={styles.categry__item}>
+                <li>
                     <Link href="/backpacks" className={styles.category__link}>
                         <span>
                             Рюкзаки
@@ -25,7 +25,7 @@ const Categories = () => {
                         </span>
                     </Link>
                 </li>
-                <li className={styles.categry__item}>
+                <li>
                     <Link href="/bags" className={styles.category__link}>
                         <span>
                             Сумки
@@ -33,7 +33,7 @@ const Categories = () => {
                         </span>
                     </Link>
                 </li>
-                <li className={styles.categry__item}>
+                <li>
                     <Link href="/wallets" className={styles.category__link}>
                         <span>
                             Гаманці

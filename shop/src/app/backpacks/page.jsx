@@ -15,7 +15,7 @@ const Backpacks = () => {
         dispatch(fetchBackpacks());
     }, [])
 
-    return (
+ return (
         <>
             <div className={styles.backpacks_wrap}>
                 <div className={styles.backpacks__filters_section}>

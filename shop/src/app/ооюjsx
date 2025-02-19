@@ -1,15 +1,6 @@
 
 [
-{
-  "id": 3,
-  "category": "Для детей",
-  "gender": "male",
-  "brand": "Бренд2",
-  "classification": "Мягкий",
-  "color": "#5733FF",
-  "structure": "Ортопедична",
-  "compartments": 3
-},
+
 {
   "id": 4,
   "category": "Для детей",

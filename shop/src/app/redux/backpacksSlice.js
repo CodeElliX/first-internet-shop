@@ -27,6 +27,6 @@ const backpacksSlice = createSlice({
     }
 })
 
-export const selectBackpackData = (state) => state.backpack.backpacksItems;
+export const selectBackpackData = (state) => state.backpack.backpacksItems  || [];
 // export const { backpacksItems } = backpacksSlice.actions;
 export default backpacksSlice.reducer;

@@ -2,22 +2,23 @@
 import { useState } from 'react';
 import styles from './productCard.module.css';
 import Image from 'next/image';
-import { useRouter } from 'next/compat/router';
+import { redirect } from 'next/navigation';
 import Link from 'next/link'
 
 
 const ProductCard = (props) => {
 
     const [clikedSvg, setClickSvg] = useState(false);
-    const router = useRouter();
 
     const onClickEmptySvg = () => {
         setClickSvg(!clikedSvg);
     }
 
     const onClickFullSvg = () => {
-        router.push('/cart');
+        redirect('/cart');
     }
+    //  width={133}
+    // height={112}
     return (
         <div className={styles.bags__card}>
 
@@ -27,8 +28,8 @@ const ProductCard = (props) => {
                         src={Array.isArray(props.image) && props.image.length > 0 ? String(props.image[0]) : "/fallback-image.webp"}
                         alt="icon"
                         className={styles.product}
-                        width={133}
-                        height={112}
+                        width={200}
+                        height={200}
                         priority
                     />
                     <h4>{props.name} {props.art}</h4>

@@ -5,54 +5,51 @@ import { useSearchParams } from "next/navigation";
 import axios from 'axios';
 import styles from './productItem.module.css';
 import Slider from '../slider/page';
+import { useDispatch } from 'react-redux';
 
 const ProductItem = () => {
     const [product, setProduct] = useState(null);
     const searchParams = useSearchParams();
-    const id = searchParams.get("id");
+    const productId = searchParams.get("id");
     const from = searchParams.get("from");
 
     useEffect(() => {
-        if (id && from) {
+        if (productId && from) {
             async function fetchData() {
                 const dataFile = from === "backpacks" ? "/backpackData.json" : "bagsData.json"
-                const { data } = await axios.get(dataFile)
-                const productData = data.find(item => item.id === Number(id));
+                const response = await axios.get(dataFile);
+                const productData = response.data.find(item => item.id === String(productId));
                 setProduct(productData);
                 return productData;
             }
             fetchData();
         }
-    }, [id, from]);
+    }, [productId, from]);
 
-    const productImg = [
-        "/bag_img.webp",
-        "/bag2.webp",
-        "/bag3.webp",
-        "/bag4.webp",
-        "/bag5.webp",
-        "/bag6.webp"
-    ];
 
     if (!product) return <div>Загрузка...</div>;
-
+    const {name, art, category, gender, classification, color, structure, compartments, availability, price, material, image} = product;
+    const available = availability ? "В наявності" : "Немає в наявності";
     return (
         <div className={styles.productItem_wrap}>
             <section className={styles.productItem_section1}>
-                <Slider productImg={productImg} />
+                <Slider image={image}/>
             </section>
             <section className={styles.productItem_section2}>
-                <h4 className={styles.productItem__tittle}>Рюкзак жіночий</h4>
-                <span className={styles.productItem__availability_status}>В наявності</span>
-                <span className={styles.productItem__price}>600грн</span>
+                <h4 className={styles.productItem__tittle}>{name}</h4>
+                <p>Артикул: {art}</p>
+                <span className={styles.productItem__availability_status}>{available}</span>
+                <span className={styles.productItem__price}>{price}грн</span>
                 <button className={styles.productItem__count_button}><span>-</span><span>1</span><span>+</span></button>
                 <button className={styles.productItem__add_product_button}>Додати до кошика</button>
                 <div className={styles.productItem__description}>
-                    <div className={styles.list_item}><span className={styles.key}>Материал</span><span className={styles.value}>Канва</span></div>
+                    <div className={styles.list_item}><span className={styles.key}>Матеіал</span><span className={styles.value}>{material}</span></div>
                     <div className={styles.list_item}><span className={styles.key}>Розмір, см</span><span className={styles.value}>38x36x7</span></div>
                     <div className={styles.list_item}><span className={styles.key}>Вага, г</span><span className={styles.value}>316</span></div>
                     <div className={styles.list_item}><span className={styles.key}>Об'єм, л</span><span className={styles.value}>9</span></div>
-                    <div className={styles.list_item}><span className={styles.key}>Група товарів</span><span className={styles.value}>Сумки-шопери</span></div>
+                    <div className={styles.list_item}><span className={styles.key}>Кількість відділень</span><span className={styles.value}>{compartments}</span></div>
+                    <div className={styles.list_item}><span className={styles.key}>Спинка</span><span className={styles.value}>{structure}</span></div>
+                    <div className={styles.list_item}><span className={styles.key}>Група товарів</span><span className={styles.value}>{category}</span></div>
                 </div>
             </section>
         </div>

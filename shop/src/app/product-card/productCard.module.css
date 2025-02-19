@@ -1,7 +1,7 @@
 /* rgb(242, 238, 238) */
 .bags__card {
   width: 210px;
-  height: 260px;
+  height: 350px;
   font-size: 16px;
   border-radius: 20px;
   border: 1px solid rgba(127, 255, 212, 0.2);
@@ -40,10 +40,6 @@
   fill: green;
 }
 
-/* .bags__card img {
-  width: 133px;
-  height: 112px;
-} */
 
 .product {
   border-bottom: 3px solid rgba(127, 255, 212, 0.5);
