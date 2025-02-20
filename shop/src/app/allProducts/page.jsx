@@ -1,6 +1,9 @@
 "use client"
 import styles from './products.module.css';
-import Filters from '../filters/page';
+import Filters from '../../../components/filters/page';
+import Backpacks from '../backpacks/page';
+import Bags from '../bags/page';
+import Wallets from '../wallets/page';
 // import ProductCard from '../product-card/page';
 
 
@@ -12,20 +15,9 @@ const AllProducts = () => {
                 <Filters />
             </div>
             <div className={styles.products__bags_section}>
-                
-                {/* <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard /> */}
+            <Backpacks />
+            <Bags />
+            <Wallets />
             </div>
         </div>
     )

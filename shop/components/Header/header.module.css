@@ -1,42 +1,53 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 20vh;
-    min-height: max-content;
-    padding: 0 20px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    background-color: #FFFFFF;
+  display: flex;
+  gap: 280px;
+  width: 212vh;
+  height: 70vh;
+  min-height: max-content;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-image: url("/back4.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
 }
+
 .logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 4px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 260px;
+  height: 220px;
+  border-radius: 4px;
 }
 
 .cart_button {
-   width: 40px;
-   height: 40px;
-    border: none;
-    background-color: inherit;
-    transition: all 150ms ease-in-out;
-    padding: 0;
- }
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+  transition: all 150ms ease-in-out;
+  padding: 0;
+}
 
 .cart_button:hover {
   transform: translateY(1px);
- }
- 
- .cart_button:active {
-    transform: translateY(1px);
-  }
- .cart_button:hover svg{
-   cursor: pointer;
-  }
+}
+
+.cart_button:active {
+  transform: translateY(1px);
+}
+
+.cart_button:hover svg {
+  cursor: pointer;
+}
+
 .header__right_side {
   display: flex;
-  gap: 90px;
+  justify-content: flex-end;
+  padding-top: 70px;
+  gap: 470px;
+  height: fit-content;
+  width: fit-content;
   padding-right: 20px;
 }

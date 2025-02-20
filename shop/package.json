@@ -1,12 +1,14 @@
 {
   "name": "shop",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://CodeElliX.github.io/BagsShop",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"  
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
@@ -27,3 +29,4 @@
     "typescript": "^5"
   }
 }
+

@@ -1,10 +1,13 @@
 .wallets__wrap {
     display: flex;
-    background-color: #FFFFFF;
-    width: 90%;
     height: 100%;
+    width: 97%;
     min-height: 800px;
     padding: 40px 20px;
+    background-image: url("/background.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .wallets__filters_section {

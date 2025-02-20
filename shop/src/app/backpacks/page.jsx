@@ -1,6 +1,6 @@
 "use client"
 import styles from './backpacks.module.css';
-import Filters from '../filters/page';
+import Filters from '../../../components/filters/page';
 import ProductCard from '../product-card/page';
 import { useEffect } from 'react';
 import { fetchBackpacks, selectBackpackData } from '../redux/backpacksSlice';
@@ -15,11 +15,11 @@ const Backpacks = () => {
         dispatch(fetchBackpacks());
     }, [])
 
- return (
+    return (
         <>
             <div className={styles.backpacks_wrap}>
                 <div className={styles.backpacks__filters_section}>
-                    <Filters />
+                    {/* <Filters /> */}
                 </div>
                 <div className={styles.backpacks__bags_section}>
                     {backpacksItems?.map((obj) => {

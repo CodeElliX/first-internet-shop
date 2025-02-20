@@ -61,7 +61,7 @@
     "id": "3",
     "name": "Дитячий рюкзак у стилі космосу",
     "art": "032",
-    "category": "Для детей",
+    "category": "Для дітей",
     "gender": "male",
     "series": "KITE",
     "classification": "0",
@@ -84,6 +84,34 @@
       "https://i.postimg.cc/Kcf0MxcC/K22-573-XS-2-8-800x800.webp",
       "https://i.postimg.cc/2SKJBmGC/K22-573-XS-2-9-800x800.webp",
       "https://i.postimg.cc/LXdbNTG7/K22-573-XS-2-6-800x800.webp"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Рюкзак рожевий",
+    "art": "032",
+    "category": "Для дітей",
+    "gender": "male",
+    "series": "KITE",
+    "classification": "0",
+    "color": "#F3FF33",
+    "structure": "Ущільнена",
+    "compartments": 1,
+    "laptop": "false",
+    "availability": "true",
+    "price": "800",
+    "size": "22x20x9",
+    "weight": "150",
+    "volume": "3.25",
+    "material": "Поліестер",
+    "image": [
+      "https://i.postimg.cc/d3gWNpmP/K22-538-XXS-1-1-800x800.webp",
+      "https://i.postimg.cc/HL361V4t/K22-538-XXS-1-3-800x800.webp",
+      "https://i.postimg.cc/Sj0rf8km/K22-538-XXS-1-4-800x800.webp",
+      "https://i.postimg.cc/XNZ6xb4P/K22-538-XXS-1-5-800x800.webp",
+      "https://i.postimg.cc/Y9ZVTvMs/K22-538-XXS-1-6-800x800.webp",
+      "https://i.postimg.cc/1XFTSyz5/K22-538-XXS-1-7-800x800.webp",
+      "https://i.postimg.cc/zDH4KFkZ/K22-538-XXS-1-8-800x800.webp"
     ]
   }
 ]

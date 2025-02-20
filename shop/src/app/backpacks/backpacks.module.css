@@ -1,10 +1,13 @@
 .backpacks_wrap {
     display: flex;
-    background-color: #FFFFFF;
-    width: 90%;
+    width: 97%;
     height: 100%;
     min-height: 800px;
     padding: 40px 20px;
+    background-image: url("/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .backpacks__filters_section {
