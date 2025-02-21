@@ -78,7 +78,7 @@ const FiltersItems = () => {
           </article>
         </>
       )}
-      {(pathname === '/allProducts' || pathname === '/') && (
+      {(pathname === '/' || pathname === '/') && (
         <>
           <article className={styles.products_groop}>
             <h4>Група товарів</h4>

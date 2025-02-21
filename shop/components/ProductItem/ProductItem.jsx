@@ -16,7 +16,14 @@ const ProductItem = () => {
     useEffect(() => {
         if (productId && from) {
             async function fetchData() {
-                const dataFile = from === "backpacks" ? "/backpackData.json" : "bagsData.json"
+                const dataFile = from === "backpacks"
+                ? "/BagsShop/backpackData.json"
+                : from === "bags"
+                ? "/BagsShop/bagsData.json"
+                : from === "wallets"
+                ? "/BagsShop/walletsData.json"
+                : null;
+              
                 const response = await axios.get(dataFile);
                 const productData = response.data.find(item => item.id === String(productId));
                 setProduct(productData);
@@ -28,12 +35,12 @@ const ProductItem = () => {
 
 
     if (!product) return <div>Загрузка...</div>;
-    const {name, art, category, gender, classification, color, structure, compartments, availability, price, material, image} = product;
+    const { name, art, category, gender, classification, color, structure, compartments, availability, price, material, image } = product;
     const available = availability ? "В наявності" : "Немає в наявності";
     return (
         <div className={styles.productItem_wrap}>
             <section className={styles.productItem_section1}>
-                <Slider image={image}/>
+                <Slider image={image} />
             </section>
             <section className={styles.productItem_section2}>
                 <h4 className={styles.productItem__tittle}>{name}</h4>

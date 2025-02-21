@@ -1,9 +1,9 @@
 "use client"
 import styles from './backpacks.module.css';
-import Filters from '../../../components/filters/page';
+// import Filters from '../../../components/filters/page';
 import ProductCard from '../product-card/page';
 import { useEffect } from 'react';
-import { fetchBackpacks, selectBackpackData } from '../redux/backpacksSlice';
+import { fetchBackpacks, selectBackpackData } from '../redux/productsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 const Backpacks = () => {

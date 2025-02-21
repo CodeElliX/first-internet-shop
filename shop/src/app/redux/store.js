@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import filter from "./filterSlice";
-import backpack from "./backpacksSlice"
+import backpack from "./productsSlice"
 
 export const store = configureStore({
     reducer: {

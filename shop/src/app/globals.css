@@ -18,17 +18,20 @@ body {
 
 .main__page {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    background-image: url("/background.jpg");
+    background-image: url("/BagsShop/background.jpg");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+    gap: 50px;
+    /* border: 1px solid; */
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.aside {
+    margin-left: 20px;
 }
