@@ -1,25 +1,19 @@
 .wallets__wrap {
     display: flex;
     justify-content: flex-start;
-    border: 3px solid red;
     height: fit-content;
-    width: 97%;
-    padding: 40px 20px;
+    width: 100%;
     background-image: url("/BagsShop/background.jpg");
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
-
-.wallets__filters_section {
-    min-width: 200px;
 }
 
 .wallets__section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
-    margin-left: 30px;
-    height: 80%;
+    height: 100%;
+    padding: 0px 20px;
+    width: 100%;
 }

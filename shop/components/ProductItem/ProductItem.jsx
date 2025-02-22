@@ -17,13 +17,13 @@ const ProductItem = () => {
         if (productId && from) {
             async function fetchData() {
                 const dataFile = from === "backpacks"
-                ? "/BagsShop/backpackData.json"
-                : from === "bags"
-                ? "/BagsShop/bagsData.json"
-                : from === "wallets"
-                ? "/BagsShop/walletsData.json"
-                : null;
-              
+                    ? "/BagsShop/backpackData.json"
+                    : from === "bags"
+                        ? "/BagsShop/bagsData.json"
+                        : from === "wallets"
+                            ? "/BagsShop/walletsData.json"
+                            : null;
+
                 const response = await axios.get(dataFile);
                 const productData = response.data.find(item => item.id === String(productId));
                 setProduct(productData);

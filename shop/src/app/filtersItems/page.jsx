@@ -3,10 +3,12 @@ import { usePathname } from "next/navigation";
 import styles from "./filtersItems.module.css"
 import { useState } from "react";
 
+
 const FiltersItems = () => {
   const [hoveredColor, setHoveredColor] = useState(null);
 
   const pathname = usePathname();
+  console.log(pathname)
   const colours = [
     "#F5F5DC", "#00B0B9", "#00B0B9", "#00BFFF", "#0000FF", "#000080",
     "#9FFEB0", "#84BD00", "#78866B", "#FFFF00", "#FFE5B4", "#FFA500", "#FFA500", "#FFC0CB",
@@ -15,7 +17,7 @@ const FiltersItems = () => {
 
   return (
     <>
-      {pathname === '/backpacks' && (
+      {pathname === '/backpacks/' && (
         <>
           <article className={styles.products_groop}>
             <h4>Група товарів</h4>
@@ -78,6 +80,10 @@ const FiltersItems = () => {
           </article>
         </>
       )}
+
+
+
+      
       {(pathname === '/' || pathname === '/') && (
         <>
           <article className={styles.products_groop}>
@@ -121,7 +127,7 @@ const FiltersItems = () => {
           </article>
         </>
       )}
-      {(pathname === '/bags') && (
+      {(pathname === '/bags/') && (
         <>
           <article className={styles.products_groop}>
             <h4>Група товарів</h4>
@@ -160,7 +166,7 @@ const FiltersItems = () => {
         </>
 
       )}
-      {(pathname === '/wallets') && (
+      {(pathname === '/wallets/') && (
         <>
           <article className={styles.products_groop}>
             <h4>Колір</h4>

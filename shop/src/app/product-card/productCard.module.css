@@ -1,10 +1,11 @@
-/* rgb(242, 238, 238) */
 .bags__card {
   width: 210px;
   height: 350px;
   font-size: 16px;
   border-radius: 20px;
   border: 1px solid rgba(127, 255, 212, 0.2);
+  overflow: hidden;
+
 
   &:hover {
     box-shadow: 0px 10px 34px 5px rgba(225, 223, 223, 0.75);
@@ -40,7 +41,13 @@
   fill: green;
 }
 
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .product {
   border-bottom: 3px solid rgba(127, 255, 212, 0.5);
+  width: 100%;
 }

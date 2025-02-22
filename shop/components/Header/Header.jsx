@@ -10,7 +10,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return <div className={styles.header}>
-
+    
     <Link href="/">
       <Image src={logo} alt="logo" className={styles.logo} priority />
     </Link>

@@ -5,4 +5,18 @@
     max-width: 250px;
     height: max-content;
     border: 1px solid;
+    margin-top: 0;
+}
+
+.products_groop__colours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+    border: "1px solid"
+}
+
+.color {
+    width: 20px;
+    height: 20px;
 }

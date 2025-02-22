@@ -1,28 +1,20 @@
 .backpacks_wrap {
     display: flex;
-    width: 97%;
+    width: 100%;
     justify-content: flex-start;
     align-items: baseline;
     height: max-content;
-    padding: 40px 20px;
     background-image: url("/BagsShop/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 3px solid red;
-
-}
-
-.backpacks__filters_section {
-    /* min-width: 200px; */
 }
 
 .backpacks__bags_section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    height: 80%;
-    border: 3px solid rgb(98, 0, 255);
+    height: 100%;
     width: 100%;
-
+    padding: 0 20px;
 }

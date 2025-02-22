@@ -7,7 +7,7 @@ const Footer = () => {
             <div className={styles.footer__sections}>
                 <section className={styles.footer__information}>
                     <h4>Інформація о компанії</h4>
-                    <Link href="/about" className={styles.footer__item}>Про нас</Link>
+                    <Link href="/aboutUs" className={styles.footer__item}>Про нас</Link>
                     <Link href="/legal_terms" className={styles.footer__item}>Умови використання сайту</Link>
                     <Link href="/contacts" className={styles.footer__item}>Контакти</Link>
                 </section>
