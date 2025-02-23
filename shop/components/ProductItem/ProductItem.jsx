@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import axios from 'axios';
 import styles from './productItem.module.css';
 import Slider from '../slider/page';
-import { useDispatch } from 'react-redux';
 
 const ProductItem = () => {
     const [product, setProduct] = useState(null);
@@ -35,7 +34,7 @@ const ProductItem = () => {
 
 
     if (!product) return <div>Загрузка...</div>;
-    const { name, art, category, gender, classification, color, structure, compartments, availability, price, material, image } = product;
+    const { name, art, category, structure, compartments, availability, price, material, image } = product;
     const available = availability ? "В наявності" : "Немає в наявності";
     return (
         <div className={styles.productItem_wrap}>

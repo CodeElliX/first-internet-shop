@@ -1,19 +1,19 @@
 .backpacks_wrap {
     display: flex;
     width: 100%;
-    justify-content: flex-start;
-    align-items: baseline;
-    height: max-content;
     background-image: url("/BagsShop/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    gap: 40px;
+    /* border: 2px solid red; */
+
 }
 
 .backpacks__bags_section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px 40px;
     height: 100%;
     width: 100%;
     padding: 0 20px;

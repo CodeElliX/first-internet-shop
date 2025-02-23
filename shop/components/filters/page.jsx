@@ -1,27 +1,35 @@
+import { usePathname } from 'next/navigation';
 import styles from './filters.module.css';
-import FiltersItems from '../../src/app/filtersItems/page';
-
-
-// const colours = [
-//     "#F5F5DC", "#00B0B9", "#00B0B9", "#00BFFF", "#0000FF", "#000080",
-//     "#9FFEB0", "#84BD00", "#78866B", "#FFFF00", "#FFE5B4", "#FFA500", "#FFA500", "#FFC0CB",
-//     "#C8A2C8", "#8B00FF", "#808080", "#000000", "#555555", "linear-gradient(90deg, #FF5733,rgb(42, 222, 75), #3357FF)"
-// ];
-
 
 const Filters = (props) => {
-    // console.log();
-    const colours = props.backpacksItems.map((el) => el.color);
+  
+    const path = usePathname();
 
+    const dataArray = props.from === "backpacks" 
+    ? props.backpacksItems
+    : props.from === "bags" 
+    ? props.bagsItems
+    : props.from === "wallets" 
+    ? props.walletsItems 
+    : [];
+
+    const colours = dataArray.map((el) => el.color);
+    const series = [... new Set(dataArray.map((el) => el.series))];
+    const classification = dataArray.map((el) => el.classification);
+    const structures =  [... new Set(dataArray.map((el) => el.structure))];
+    const compartments = [...new Set(dataArray.map((el) => Number(el.compartments)))];
+    const categoryes = [...new Set(dataArray.map((el) => el.category))];
+
+
+    if(path === "/") return
 
     return (
         <aside className={styles.filter__wrap}>
-            {/* <FiltersItems /> */}
             <article className={styles.products_groop}>
                 <h4>Група товарів</h4>
-                <span><input type="checkbox" />Для дітей</span>
-                <span><input type="checkbox" />Для школи</span>
-                <span><input type="checkbox" />Старша школа і дорослі</span>
+                {categoryes.map((el, index) => {
+                    return <span key={index}><input type="checkbox" />{el}</span>
+                })}
             </article>
             <article className={styles.products_groop}>
                 <h4>Колір</h4>
@@ -51,30 +59,36 @@ const Filters = (props) => {
                 </div>
             </article>
             <article className={styles.products_groop}>
-                <h4>Виробник</h4>
-                <span><input type="checkbox" />Бренд1</span>
-                <span><input type="checkbox" />Бренд1</span>
-                <span><input type="checkbox" />Бренд1</span>
+                <h4>Серія</h4>
+                {series.map((el, index) => {
+                    return <span key={index}><input type="checkbox" />{el}</span>
+                })}
             </article>
-            <article className={styles.products_groop}>
-                <h4>Классифікація</h4>
-                <span><input type="checkbox" />Каркасні</span>
-                <span><input type="checkbox" />Напівкаркасні</span>
-                <span><input type="checkbox" />М'які</span>
-            </article>
-            <article className={styles.products_groop}>
-                <h4>Конструкція спинки</h4>
-                <span><input type="checkbox" />Анатомічна</span>
-                <span><input type="checkbox" />AGS</span>
-                <span><input type="checkbox" />Ортопедична</span>
-                <span><input type="checkbox" />Ущільнена</span>
-                <span><input type="checkbox" />З дихаючою сіткою</span>
-            </article>
+            {classification.some(el => el !== "0") && (
+                <article className={styles.products_groop}>
+                    <h4>Классифікація</h4>
+                    {classification.map((el, index) =>
+                        el !== "0"
+                            ? (<span key={index}><input type="checkbox" />{el}</span>)
+                            : ("")
+                    )}
+                </article>
+            )}
+            {structures.some(el => el !== "0") && (
+                <article className={styles.products_groop}>
+                    <h4>Конструкція спинки</h4>
+                    {structures.map((el, index) => {
+                        return <span key={index}><input type="checkbox" />{el}</span>
+                    })}
+                </article>
+            )}
             <article className={styles.products_groop}>
                 <h4>Кількість відділень</h4>
-                <span><input type="checkbox" />1</span>
-                <span><input type="checkbox" />2</span>
-                <span><input type="checkbox" />3</span>
+                {compartments
+                .sort((a, b) => a - b)
+                .map((el, index) => {
+                    return <span key={index}><input type="checkbox" />{el}</span>
+                })}
             </article>
         </aside>
     )

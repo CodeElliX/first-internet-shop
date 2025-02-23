@@ -6,29 +6,30 @@
 .about__wrap h3,
 .about__wrap h4 {
     text-align: center;
+    opacity: 0.6;
 }
 
 .about__wrap h1 {
     text-decoration: underline;
-    text-decoration-color:  #A3D2D8;
+    text-decoration-color: #A3D2D8;
 }
 
 .about__wrap p {
     text-align: center;
     font-size: 22px;
-
 }
-.about__wrap ul{
+
+.about__wrap ul {
     text-align: center;
     font-size: 22px;
     list-style-position: inside;
 }
 
-.about__wrap ul{
+.about__wrap ul {
     display: inline-block;
     text-align: left;
 }
 
-.about__wrap ul li::marker{
+.about__wrap ul li::marker {
     color: #A3D2D8;
 }

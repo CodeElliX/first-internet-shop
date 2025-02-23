@@ -1,11 +1,31 @@
 .filter__wrap {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 250px;
-    height: max-content;
-    border: 1px solid;
-    margin-top: 0;
+    min-width: 250px;
+    border: 3px solid #B8DEE3;
+    border-radius: 2px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.products_groop {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.products_groop h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.products_groop span {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    padding-left: 10px;
 }
 
 .products_groop__colours {
@@ -13,10 +33,35 @@
     flex-wrap: wrap;
     gap: 10px;
     padding-left: 10px;
-    border: "1px solid"
 }
 
-.color {
+.products_groop__colours div {
     width: 20px;
     height: 20px;
+    background-color: transparent;
+}
+
+.products_groop__gender {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.products_groop__gender svg {
+    transition: transform 200ms ease-in-out;
+    width: 50px;
+}
+
+.products_groop__gender svg:active circle {
+    fill: #BFFFE9;
+}
+
+.products_groop__gender svg:hover {
+    transform: translateY(1px);
+    cursor: pointer;
+}
+
+.products_groop__gender svg:active {
+    border: 1px solid;
+    transform: none;
 }

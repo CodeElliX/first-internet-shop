@@ -7,12 +7,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    gap: 40px;
 }
 
 .wallets__section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px 40px;
     height: 100%;
     padding: 0px 20px;
     width: 100%;

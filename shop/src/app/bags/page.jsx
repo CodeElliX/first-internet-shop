@@ -19,7 +19,7 @@ const Bags = () => {
         <>
             <div className={styles.bags__wrap}>
                 <div className={styles.bags__filters_section}>
-                    {/* <Filters /> */}
+                    <Filters from="bags" bagsItems={bagsItems}/>
                 </div>
                 <div className={styles.bags__section}>
                   {bagsItems.map((obj) => {

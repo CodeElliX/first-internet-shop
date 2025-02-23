@@ -18,15 +18,13 @@ const Backpacks = () => {
     return (
         <>
             <div className={styles.backpacks_wrap}>
-                <div className={styles.backpacks__filters_section}>
+                <div>
                     <Filters from="backpacks" backpacksItems={backpacksItems} />
                 </div>
                 <div className={styles.backpacks__bags_section}>
                     {backpacksItems?.map((obj) => {
                         return (
-                            <>
-                                <ProductCard key={obj.id} {...obj} from="backpacks" />
-                            </>
+                            <ProductCard key={obj.id} {...obj} from="backpacks" />
                         )
                     })}
                 </div>
