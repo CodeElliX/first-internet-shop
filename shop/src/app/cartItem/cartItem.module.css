@@ -1,7 +1,5 @@
 .cart_item {
-    /* border: 1px solid; */
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -9,15 +7,27 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    flex: 0.3;
 }
 
 .cart_item__info {
     text-align: center;
+    flex: 1;
+}
+
+.cart_item__count {
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.3;
 }
 
 .cart_item__price {
     font-size: 22px;
     width: 12%;
+    flex: 0.5;
+    text-align: center;
 }
 
 .cart_item__info h3 {
@@ -31,12 +41,6 @@
     margin-top: 0;
 }
 
-.cart_item__count {
-    display: flex;
-    width: 12%;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .cart_item__count_minus,
 .cart_item__count_plus {
@@ -74,7 +78,6 @@
 .cart_item__count_minus:hover line,
 .cart_item__count_plus:hover line,
 .cart_item__remove_item:hover line {
-    /* цвет крестика */
     stroke: #FFFFFF;
 }
 
@@ -82,7 +85,6 @@
 .cart_item__count_plus:hover circle,
 .cart_item__remove_item:hover circle {
     cursor: pointer;
-    /* заливка круга */
     stroke: #4b5b67;
     fill: #4b5b67;
 }
@@ -105,5 +107,5 @@
 
 .cart_item__remove_item {
     transform: rotate(45deg);
-
+    flex: 1;
 }

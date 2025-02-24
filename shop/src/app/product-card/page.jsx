@@ -4,21 +4,33 @@ import styles from './productCard.module.css';
 import Image from 'next/image';
 import { redirect } from 'next/navigation';
 import Link from 'next/link'
+import { useDispatch } from 'react-redux';
+import { addItem } from '../redux/cartSlice'
 
 
 const ProductCard = (props) => {
-
     const [clikedSvg, setClickSvg] = useState(false);
+    const { id, name, art, price, image } = props;
+    const dispatch = useDispatch();
 
     const onClickEmptySvg = () => {
+        
         setClickSvg(!clikedSvg);
+        const item = {
+            id,
+            name,
+            art,
+            price,
+            image
+        }
+        dispatch(addItem(item))
     }
 
     const onClickFullSvg = () => {
+
         redirect('/cart');
     }
-    //  width={133}
-    // height={112}
+
     return (
         <div className={styles.bags__card}>
 

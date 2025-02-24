@@ -1,0 +1,35 @@
+.cart_empty__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.cart_empty__wrap h2 {
+ font-size: 32px;
+}
+
+.cart_empty__wrap p {
+ font-size: 18px;
+ opacity: 0.8;
+}
+
+.cart_empty__wrap button {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: #01554E;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.cart_empty__wrap button:hover {
+    background-color: #02746a;
+}
+
+.cart_empty__wrap button:active {
+    transform: translateY(1px);
+}

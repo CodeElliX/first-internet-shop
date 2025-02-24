@@ -1,30 +1,32 @@
 "use client"
 import Image from 'next/image';
-import bag from '../../../public/bag_img.webp';
-import { useState } from 'react';
 import styles from './cartItem.module.css'
+import { addCount, minusCount, removeItem } from "../redux/cartSlice"
+import { useDispatch, useSelector } from 'react-redux';
 
-const CartItem = () => {
-    let [count, setCount] = useState(1);
+const CartItem = ({ id, name, art, price, image, count }) => {
+
+    const dispatch = useDispatch();
+
     const onClickMinus = () => {
-        setCount(count -= 1)
+        dispatch(minusCount(id));
     }
 
     const onClickPlus = () => {
-        setCount(count += 1)
+        dispatch(addCount(id));
     }
     const onClickRemove = () => {
-        setCount(count = 1)
+        dispatch(removeItem(id));
     }
     return (
         <>
             <div className={styles.cart_item}>
-                <div >
-                    <Image src={bag} alt="bag" className={styles.cart_item__img} />
+                <div className={styles.cart_item__img}>
+                    <Image src={image[0]} alt="bag" className={styles.cart_item__img} width={50} height={50} />
                 </div>
                 <div className={styles.cart_item__info}>
-                    <h3>Рюкзак жіночий</h3>
-                    <p>артикль: 2345</p>
+                    <h3>{name}</h3>
+                    <p>артикль: {art}</p>
                 </div>
                 <div className={styles.cart_item__count}>
 
@@ -47,7 +49,7 @@ const CartItem = () => {
 
                 </div>
                 <div className={styles.cart_item__price}>
-                    <b>{500 * count}₴</b>
+                    <b>{price * count}₴</b>
                 </div>
 
                 <div className={styles.cart_item__remove}>
