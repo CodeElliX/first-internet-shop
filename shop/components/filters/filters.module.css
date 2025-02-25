@@ -35,33 +35,45 @@
     padding-left: 10px;
 }
 
-.products_groop__colours div {
+.products_groop__colours .color {
     width: 20px;
     height: 20px;
     background-color: transparent;
 }
 
+.selected {
+    outline: 2px solid black; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.products_groop__wrap_gender {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 22px;
+    box-sizing: border-box;
+
+}
 .products_groop__gender {
     display: flex;
+    align-items: center;
     justify-content: center;
-    height: 50px;
+    gap: 30px;
 }
 
 .products_groop__gender svg {
     transition: transform 200ms ease-in-out;
-    width: 50px;
 }
 
-.products_groop__gender svg:active circle {
+.select svg circle {
     fill: #BFFFE9;
 }
 
 .products_groop__gender svg:hover {
-    transform: translateY(1px);
+    transform: translateY(0.5px);
     cursor: pointer;
 }
 
-.products_groop__gender svg:active {
-    border: 1px solid;
+/* .products_groop__gender svg:active {
     transform: none;
-}
+} */

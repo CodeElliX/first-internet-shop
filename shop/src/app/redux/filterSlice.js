@@ -2,6 +2,13 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
   searchValue: '',
+  category: [],
+  series: [],
+  classification: [],
+  structures: [],
+  compartments: [],
+  colours: [],
+  gender: []
 }
 
 export const filterSlice = createSlice({
@@ -11,10 +18,19 @@ export const filterSlice = createSlice({
     setSearchValue(state, actions) {
       state.searchValue = actions.payload
     },
+    toggleFilter(state, action) {
+      const { filterType, value } = action.payload;
+      if (state[filterType].includes(value)) {
+        state[filterType] = state[filterType].filter(item => item !== value);
+      } else {
+        state[filterType].push(value);
+      }
+    },
+    resetFilters: () => initialState,
   }
 })
 
-export const { setSearchValue } = filterSlice.actions;
+export const { setSearchValue, toggleFilter, resetFilters } = filterSlice.actions;
 export default filterSlice.reducer;
 
 export const selectValue = (state) => state.filter?.searchValue || "";
