@@ -6,7 +6,7 @@ const Contacts = () => {
             <div className={styles.contacts__description}>
                 <h1>Контакти</h1>
                 <p><strong>Адреса:</strong> ул. Примірна, 1, м. Київ, Україна</p>
-                <p><strong>Телефон:</strong> +380 44 123 45 67</p>
+                <p><strong>Телефон:</strong> +38 (XXX) XXX-XX-XX</p>
                 <p><strong>Email:</strong> info@company.com</p>
             </div>
             <div className={styles.contacts__map}>

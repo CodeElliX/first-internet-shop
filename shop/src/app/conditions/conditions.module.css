@@ -1,0 +1,24 @@
+.conditions__wrap {
+    width: 80%;
+}
+
+.conditions__wrap ul li::marker {
+    color: #A3D2D8;
+}
+.conditions__wrap h1{
+font-size: 32px;
+text-align: center;
+opacity: 0.7;
+text-decoration: underline;
+text-decoration-color: #9DD0D4;
+}
+
+.conditions__wrap h2{
+font-size: 28px;
+opacity: 0.7;
+}
+
+.conditions__wrap ul,
+.conditions__wrap p{
+font-size: 22px;
+}

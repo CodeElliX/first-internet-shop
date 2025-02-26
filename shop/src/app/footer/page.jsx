@@ -8,14 +8,14 @@ const Footer = () => {
                 <section className={styles.footer__information}>
                     <h4>Інформація о компанії</h4>
                     <Link href="/aboutUs" className={styles.footer__item}>Про нас</Link>
-                    <Link href="/legal_terms" className={styles.footer__item}>Умови використання сайту</Link>
+                    <Link href="/conditions" className={styles.footer__item}>Умови використання сайту</Link>
                     <Link href="/contacts" className={styles.footer__item}>Контакти</Link>
                 </section>
                 <section className={styles.footer__information}>
                     <h4>Допомога</h4>
-                    <Link href="/payment-and-delivery" className={styles.footer__item}>Доставка та оплата</Link>
-                    <Link href="/warranty" className={styles.footer__item}>Гарантія</Link>
-                    <Link href="/return" className={styles.footer__item}>Повернення товару</Link>
+                    <Link href="/delivery" className={styles.footer__item}>Доставка та оплата</Link>
+                    <Link href="/guarantee" className={styles.footer__item}>Гарантія</Link>
+                    <Link href="/return-products" className={styles.footer__item}>Повернення товару</Link>
                 </section>
                 <section className={styles.footer__information}>
                     <h4>Підпишіться на нас</h4>

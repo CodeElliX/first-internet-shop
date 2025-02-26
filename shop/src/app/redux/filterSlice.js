@@ -8,7 +8,8 @@ const initialState = {
   structures: [],
   compartments: [],
   colours: [],
-  gender: []
+  gender: [],
+  chapter: []
 }
 
 export const filterSlice = createSlice({
