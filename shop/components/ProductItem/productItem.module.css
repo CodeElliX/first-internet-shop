@@ -18,6 +18,7 @@
     margin-bottom: 0;
     max-width: 50%;
     text-align: center;
+    margin-top: 0;
 }
 
 .productItem_section2 p {
@@ -61,6 +62,10 @@
 
 .productItem__add_product_button:hover {
     background-color: #00BC52;
+}
+
+.productItem__add_product_button:active {
+    transform: translateY(1px);
 }
 
 .productItem__description {

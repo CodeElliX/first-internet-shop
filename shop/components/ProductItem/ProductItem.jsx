@@ -1,16 +1,33 @@
 "use client";
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useSearchParams } from "next/navigation";
 import axios from 'axios';
 import styles from './productItem.module.css';
 import Slider from '../slider/page';
+import { minusCount, addCount, addItem, removeItem } from '@/app/redux/cartSlice';
 
 const ProductItem = () => {
     const [product, setProduct] = useState(null);
     const searchParams = useSearchParams();
     const productId = searchParams.get("id");
     const from = searchParams.get("from");
+    const dispatch = useDispatch();
+
+
+    const setClickButton = () => {
+        if (product) {
+            const item = {
+                id: product.id,
+                name: product.name,
+                art: product.art,
+                price: product.price,
+                image: product.image
+            }
+            dispatch(addItem(item))
+        }
+    }
 
     useEffect(() => {
         if (productId && from) {
@@ -34,8 +51,10 @@ const ProductItem = () => {
 
 
     if (!product) return <div>Загрузка...</div>;
+
     const { name, art, category, structure, compartments, availability, price, material, image } = product;
     const available = availability ? "В наявності" : "Немає в наявності";
+
     return (
         <div className={styles.productItem_wrap}>
             <section className={styles.productItem_section1}>
@@ -46,8 +65,7 @@ const ProductItem = () => {
                 <p>Артикул: {art}</p>
                 <span className={styles.productItem__availability_status}>{available}</span>
                 <span className={styles.productItem__price}>{price}грн</span>
-                <button className={styles.productItem__count_button}><span>-</span><span>1</span><span>+</span></button>
-                <button className={styles.productItem__add_product_button}>Додати до кошика</button>
+                <button onClick={setClickButton} className={styles.productItem__add_product_button}>Додати до кошика</button>
                 <div className={styles.productItem__description}>
                     <div className={styles.list_item}><span className={styles.key}>Матеіал</span><span className={styles.value}>{material}</span></div>
                     <div className={styles.list_item}><span className={styles.key}>Розмір, см</span><span className={styles.value}>38x36x7</span></div>
@@ -60,6 +78,6 @@ const ProductItem = () => {
             </section>
         </div>
     );
-};
 
+}
 export default dynamic(() => Promise.resolve(ProductItem), { ssr: false });

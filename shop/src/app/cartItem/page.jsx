@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import styles from './cartItem.module.css'
 import { addCount, minusCount, removeItem } from "../redux/cartSlice"
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 const CartItem = ({ id, name, art, price, image, count }) => {
 
@@ -18,6 +18,7 @@ const CartItem = ({ id, name, art, price, image, count }) => {
     const onClickRemove = () => {
         dispatch(removeItem(id));
     }
+    
     return (
         <>
             <div className={styles.cart_item}>

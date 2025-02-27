@@ -9,14 +9,6 @@ const Filters = (props) => {
     const dispatch = useDispatch();
     const activeFilters = useSelector(state => state.filter);
 
-    // const dataArray = props.from === "backpacks"
-    //     ? props.backpacksItems
-    //     : props.from === "bags"
-    //         ? props.bagsItems
-    //         : props.from === "wallets"
-    //             ? props.walletsItems
-    //             : [];
-
     const dataArray = props.from === "backpacks"
         ? props.backpacksItems
         : props.from === "bags"

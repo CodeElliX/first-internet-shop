@@ -9,12 +9,13 @@ import { addItem } from '../redux/cartSlice'
 
 
 const ProductCard = (props) => {
+
     const [clikedSvg, setClickSvg] = useState(false);
     const { id, name, art, price, image } = props;
     const dispatch = useDispatch();
 
     const onClickEmptySvg = () => {
-        
+
         setClickSvg(!clikedSvg);
         const item = {
             id,
@@ -37,11 +38,12 @@ const ProductCard = (props) => {
             <div className={styles.card}>
                 <Link href={`/product-item?id=${props.id}&from=${props.from}`} className={styles.link}>
                     <Image
-                        src={Array.isArray(props.image) && props.image.length > 0 ? String(props.image[0]) : "/fallback-image.webp"}
+                        src={Array.isArray(props.image) && props.image.length > 0 ? String(props.image[0]) : "/bag2.webp"}
                         alt="icon"
                         className={styles.product}
                         width={200}
                         height={200}
+                        // style={{ height: "auto" }}
                         priority
                     />
                     <h4>{props.name} {props.art}</h4>

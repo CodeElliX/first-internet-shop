@@ -20,9 +20,8 @@ export const preRenderFiltersHomePage = (searchValue, items, activeFilters) => {
         const colorMatch = activeFilters.colours.length === 0 || activeFilters.colours.includes(obj.color);
         const genderMatch = activeFilters.gender.length === 0 || activeFilters.gender.includes(obj.gender);
         const searchMatch = obj.name.toLowerCase().includes(searchValue.toLowerCase());
-        const chapterMatch = activeFilters.chapter.length === 0 || activeFilters.chapter.includes(obj.chapter);
         const categoryMatch = activeFilters.category.length === 0 || activeFilters.category.includes(obj.chapter);
-        return  colorMatch && genderMatch && searchMatch && chapterMatch && categoryMatch;
+        return  colorMatch && genderMatch && searchMatch && categoryMatch;
     });
    return filtered;
 }
